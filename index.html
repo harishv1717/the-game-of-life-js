@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello!</title>
+    <style type="text/css">
+      body {
+        background: lightblue;
+        display: inline-block;
+      }
+      #canvas {
+        background: #fff;
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+        display: inline-block;
+      }
+      .div {
+        float: left;
+        display: inline;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="canvasDiv">
+      <canvas id="canvas" width="620px" height="620px"></canvas>
+    </div>
+
+    <div id="input">
+      <input type="text" value="0" id="x">
+      <input type="text" value="0" id="y">
+      <button onclick="enterCell()" id="enter">Enter Cell</button>
+    </div>
+
+    <button onclick="setTimeout(() => requestAnimationFrame(gameLoop), 50)" id="start">Start</button>
+    <button onclick="window.location.reload()">Stop/Clear</button>
+    
+    <script src="index.js"></script>
+  </body>
+</html>
