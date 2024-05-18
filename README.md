@@ -1,1 +1,1 @@
-The Game of Life by John Conway
+A simple implementation of The Game of Life by John Conway
